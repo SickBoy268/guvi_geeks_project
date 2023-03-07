@@ -1,0 +1,68 @@
+body{
+    font-family: 'Montserrat';
+    color: #fff;
+    background-color:black;
+}
+
+.container{
+    margin-top: 15%;
+}
+
+.container-fluid{ 
+    padding: 2% 15%;
+    text-align: center;
+}
+
+.contents{
+    margin-top: 15%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    font-size: 1.5rem;
+}
+
+.lead{
+    size: 10%;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+    margin: 10px;
+    padding: 10px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;   
+    font-size: large;         
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+.card-registration .select-arrow {
+top: 13px;
+}
+
+
+
+
+
