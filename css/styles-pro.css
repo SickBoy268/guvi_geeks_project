@@ -126,17 +126,15 @@ h2 {
     font-size: 1.2rem;
 }
 
-
-
   /* Edit Form */
 
-#edit-form {
-    margin-top: 50px;
-    display: none;
-}
-
-#edit-form label {
-    font-weight: bold;
+.form-control {
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
 }
 
 #edit-btn, #save-btn {
@@ -172,6 +170,11 @@ h2 {
 }
 
   /* About Me */
+
+#about-me-text {
+    width: 100%;
+    resize: none;
+}
 
 #about-me{
     padding-top: 100px;
@@ -209,6 +212,48 @@ h2 {
     background-color: rgb(0, 0, 0);
 }
 
+/* Logout-Btn */
+#logout-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #ffffff;
+    background-color: #dc3545;
+    border-color: #ffffff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#logout-btn:hover {
+    color: #fff;
+    background-color: #6b1d1d;
+    border-color: #000000;
+}
+
+@media (max-width: 768px) {
+    #logout-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logout-btn {
+        display: none;
+    }
+}
 
   /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -240,3 +285,4 @@ h2 {
         font-size: 0.9rem;
     }
 }
+
