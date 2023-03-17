@@ -1,0 +1,203 @@
+
+
+.container-fluid{ 
+    padding: 1% 10%;
+    text-align: left;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #343a40;
+}
+
+ /* Profile Picture */
+#picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+#profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: min(75px, 50%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#picture-container::after { 
+    content: "Profile Picture";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    z-index: -1;
+}
+
+#upload-picture-btn {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 30px;
+    background-color: #5F4B8BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#upload-picture-btn:hover {
+    background-color: #E69A8DFF;
+}
+
+#name {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+#email, #phone, #address {
+    color: #868e96;
+    font-size: 1.2rem;
+}
+
+
+
+  /* Edit Form */
+
+#edit-form {
+    margin-top: 50px;
+    display: none;
+}
+
+#edit-form label {
+    font-weight: bold;
+}
+
+#edit-btn, #save-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(35, 6, 151, 0.468);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancel-btn{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(80, 78, 89, 0.468);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit-btn:hover {
+    background-color: rgb(102, 0, 108);
+}
+
+#save-btn:hover {
+    background-color: rgb(102, 0, 108);
+}
+
+#cancel-btn:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+  /* About Me */
+
+#about-me{
+    padding-top: 100px;
+}
+
+#edit-about-me-btn, #save-about-me-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(35, 6, 151, 0.468);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancel-about-me-btn{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(80, 78, 89, 0.468);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit-about-me-btn:hover {
+    background-color: rgb(102, 0, 108);
+}
+
+#save-about-me-btn:hover {
+    background-color: rgb(102, 0, 108);
+}
+
+#cancel-about-me-btn:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 150px;
+    }
+
+    #name {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    #email, #phone, #address {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    img {
+        max-width: 150px;
+    }
+
+    #name {
+        margin-top: 5px;
+        font-size: 1.2rem;
+    }
+
+    #email, #phone, #address {
+        font-size: 0.9rem;
+    }
+}
