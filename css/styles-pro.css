@@ -118,6 +118,7 @@ h2 {
 #name {
     margin-top: 20px;
     font-size: 2rem;
+    padding-top: 35px;
 }
 
 #email, #phone, #address {
