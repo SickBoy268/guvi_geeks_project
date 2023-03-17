@@ -8,43 +8,43 @@ document.addEventListener("DOMContentLoaded", () => {
 	const emailField = document.querySelector("#email");
 	const passwordField = document.querySelector("#password");
 	const confirmPasswordField = document.querySelector("#confirm-password");
-  
+
 	// Add event listener for form submit
 	form.addEventListener("submit", (event) => {
 	  // Prevent the default form submission behavior
-	  event.preventDefault();
-  
+	event.preventDefault();
+
 	  // Check if all required fields are filled
-	  if (!firstNameField.value || !lastNameField.value || !dobField.value || !emailField.value || !passwordField.value || !confirmPasswordField.value) {
+	if (!firstNameField.value || !lastNameField.value || !dobField.value || !emailField.value || !passwordField.value || !confirmPasswordField.value) {
 		alert("Please fill in all required fields.");
 		return;
-	  }
-  
+	}
+
 	  // Check if password and confirm password fields match
-	  if (passwordField.value !== confirmPasswordField.value) {
+	if (passwordField.value !== confirmPasswordField.value) {
 		alert("Password and Confirm Password fields do not match.");
 		return;
-	  }
-  
+	}
+
 	  // Send a POST request to the server to register the user
-	  const formData = new FormData(form);
-	  fetch("php/register.php", {
+	const formData = new FormData(form);
+	fetch("php/register.php", {
 		method: "POST",
 		body: formData,
-	  })
+	})
 		.then((response) => response.json())
 		.then((data) => {
-		  if (data.success) {
+			if (data.success) {
 			// Registration was successful, redirect to login page
-			window.location.href = "login.html";
-		  } else {
+				window.location.href = "login.html";
+			} else {
 			// Registration failed, display error message
 			alert(data.message);
-		  }
+			}
 		})
 		.catch((error) => {
-		  alert("An error occurred while registering. Please try again later.");
-		  console.error(error);
+			alert("An error occurred while registering. Please try again later.");
+			console.error(error);
 		});
 	});
-  });
+});
